@@ -1,10 +1,15 @@
 def extract_amt(data):
-   return list(map(lambda x: x["amount"], data))
-
-
+    try:
+        return list(map(lambda x: x["amount"], data))
+    except KeyError as ke:
+        print(f"Field 'amount' not found in data: {ke}")
+        
 
 def discount(amount):
-    return (list(map(lambda x: x * 0.9, amount)))
+    try:
+        return list(map(lambda x: x * 0.9, amount))
+    except TypeError as te:
+        print(f"Type error in discount: {te}")
 
 
 def apply_function(func, amt):
