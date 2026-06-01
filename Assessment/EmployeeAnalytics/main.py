@@ -1,9 +1,11 @@
 from tabulate import tabulate
-from Assessment.EmployeeAnalytics.sql.schema import create_table, insert_data
+from sql.schema import create_table, insert_data
 from utils.logger import logger
 from db.dbManager import DatabaseManager
-from Assessment.EmployeeAnalytics.controller.analyser import PerformanceAnalyzer
+from controller.analyser import PerformanceAnalyzer
 from utils.exceptions import DataNotFoundException
+from models.employees import Employee
+from controller.crud import crud_operation
 
 def display(title, headers, results):
     if not results:
@@ -34,8 +36,10 @@ def main():
             print("2. Performance Trend Analysis")
             print("3. Employee Hierarchy")
             print("4. Top Performers")
-            print("5. Exit")
-            choice = int(input("Enter your choice (1-5): "))
+            print("5. Add Employee")
+            print("6. Delete Employee")
+            print("7. Exit")
+            choice = int(input("Enter your choice (1-7): "))
 
             match choice:
                 case 1 :
@@ -57,8 +61,27 @@ def main():
                     header, results = analyzer.top_performers()
                     display("Top Performers:" ,header,results)
                     continue 
-
                 case 5:
+                    emp = Employee(
+                            int(input("Enter Employee ID: ")),
+                            input("Enter Name: ").strip(),
+                            input("Enter Department: ").strip(),
+                            int(input("Enter Salary: ")),
+                            input("Enter Join Date YYYY-MM-DD: ").strip(),
+                            int(input("Enter Manager ID: "))
+                        )
+                    crud_op = crud_operation(cursor)
+                    crud_op.add_employee(emp)
+                    db_manager.commit()
+                    print("Employee added successfully")
+
+                case 6:
+                    employee_id = int(input("Enter Employee ID to delete: "))
+                    crud_op = crud_operation(cursor)
+                    crud_op.delete_employee(employee_id)
+                    db_manager.commit()
+                    print("Employee deleted successfully")
+                case 7:
                     print("Exiting the program....")
                     break
 

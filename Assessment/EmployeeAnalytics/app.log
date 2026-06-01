@@ -1,0 +1,16 @@
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Database connection closed
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Main function executed successfully
+INFO:utils.logger:Database connection closed
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database changes committed
+ERROR:utils.logger:Error in main function: Employee 24 does not exist.
+INFO:utils.logger:Database connection closed

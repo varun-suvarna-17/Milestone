@@ -1,0 +1,12 @@
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database changes committed
+ERROR:utils.logger:Error in main function: crud_operation.add_employee() missing 1 required positional argument: 'employee'
+INFO:utils.logger:Database connection closed
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Database changes committed
+ERROR:utils.logger:Error in main function: Cannot delete employee 2. Other employees report to this manager.
+INFO:utils.logger:Database connection closed
