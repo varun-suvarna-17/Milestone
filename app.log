@@ -1,0 +1,37 @@
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:Database connection attempted
+ERROR:utils.logger:Error in main function: invalid literal for int() with base 10: 'h'
+INFO:utils.logger:Database connection attempted
+ERROR:utils.logger:Error in main function: 'int' object has no attribute 'strip'
+INFO:utils.logger:Database connection attempted
+ERROR:utils.logger:Error in main function: invalid literal for int() with base 10: 'd'
+INFO:utils.logger:Database connection attempted
+ERROR:utils.logger:Error in main function: invalid literal for int() with base 10: 'python -u "d:\\Mini Projects\\Milestone1\\Assessment\\EmployeeAnalytics\\main.py"'
+INFO:utils.logger:Database connection attempted
+ERROR:utils.logger:Error in main function: invalid literal for int() with base 10: 'python -u "d:\\Mini Projects\\Milestone1\\Assessment\\EmployeeAnalytics\\main.py"'
+INFO:utils.logger:Database connection attempted
+ERROR:utils.logger:Error in main function: invalid literal for int() with base 10: 'python -u "d:\\Mini Projects\\Milestone1\\Assessment\\EmployeeAnalytics\\sql\\queries.py"'
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:Main function executed successfully
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+ERROR:utils.logger:Error in main function: 'sqlite3.Cursor' object has no attribute 'commit'
+INFO:utils.logger:Database connection closed
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+ERROR:utils.logger:Error in main function: 'sqlite3.Cursor' object has no attribute 'commit'
+INFO:utils.logger:Database connection closed
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+ERROR:utils.logger:Error in main function: 'sqlite3.Cursor' object has no attribute 'commit'
+INFO:utils.logger:Database connection closed
+INFO:utils.logger:Database connection attempted
+INFO:utils.logger:DatabaseManager connected successfully
+INFO:utils.logger:Database changes committed
+INFO:utils.logger:Main function executed successfully
+INFO:utils.logger:Database connection closed
